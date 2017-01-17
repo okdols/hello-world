@@ -1,16 +1,17 @@
 language: python
 
 install:
-  - "pip install pep8"
-  - "pip install flask"
-  - "pip install codecov"
+  - pip install pep8
+  - pip install flask
+  - pip install codecov
 
 python:
   - "2.6"
   - "2.7"
 
 script:
-  - "pep8 src/*.py"
+  - pep8 src/*.py
+  - coverage run test/exam1_test.py
 
 after_success:
   - codecov
