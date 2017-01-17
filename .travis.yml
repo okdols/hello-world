@@ -1,23 +1,18 @@
 language: python
 
 install:
-  - pip install pep8
-  - pip install flask
-  - pip install codecov
-
-python:
-  - "2.7"
+  - pip install -r 'requirement.txt'
 
 matrix:
     include:
-        # Set Path
-        - env: >
+        # python 2.7
+        - python: 2.7
+          env: >
             SRCPATH='pwd'/src
             TESTPATH='pwd'/test
-
 script:
   - pep8 src/*.py
   - coverage run test/exam1_test.py
-
+  
 after_success:
-  - codecov
+  - bash <(curl -s https://codecov.io/bash)
