@@ -3,7 +3,7 @@ import os
 import unittest
 import tempfile
 from sys import path
-path.append(src/)
+path.append(/src)
 
 from flask import Flask, request, app, json
 
