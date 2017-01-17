@@ -7,13 +7,13 @@ install:
 
 matrix:
     include:
-        # python 2.7
+        # python 2
+        - python: 2.6
         - python: 2.7
-          # env: >
-            # SRCPATH=src/
-            # TESTPATH=test/
+        
 script:
-  - pep8 src/*.py
+  - pep8 src/exam1.py
+  - pep8 test/exam1_test.py
   - coverage run test/exam1_test.py
   
 after_success:
