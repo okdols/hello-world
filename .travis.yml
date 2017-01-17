@@ -1,3 +1,5 @@
+sudo: false
+
 language: python
 
 install:
@@ -8,8 +10,8 @@ matrix:
         # python 2.7
         - python: 2.7
           env: >
-            SRCPATH='pwd'/src
-            TESTPATH='pwd'/test
+            SRCPATH=src/
+            TESTPATH=test/
 script:
   - pep8 src/*.py
   - coverage run test/exam1_test.py
