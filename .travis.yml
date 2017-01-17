@@ -9,6 +9,13 @@ python:
   - "2.6"
   - "2.7"
 
+matrix:
+    include:
+        # Set Path
+        - env: >
+            SRCPATH='pwd'/src
+            TESTPATH='pwd'/test
+
 script:
   - pep8 src/*.py
   - coverage run test/exam1_test.py
