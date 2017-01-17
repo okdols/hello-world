@@ -13,6 +13,7 @@ matrix:
             SRCPATH=src/
             TESTPATH=test/
 script:
+  - pwd
   - pep8 src/*.py
   - coverage run test/exam1_test.py
   
