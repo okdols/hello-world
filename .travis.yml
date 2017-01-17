@@ -9,11 +9,10 @@ matrix:
     include:
         # python 2.7
         - python: 2.7
-          env: >
-            SRCPATH=src/
-            TESTPATH=test/
+          # env: >
+            # SRCPATH=src/
+            # TESTPATH=test/
 script:
-  - pwd
   - pep8 src/*.py
   - coverage run test/exam1_test.py
   
