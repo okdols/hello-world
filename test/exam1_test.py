@@ -2,6 +2,8 @@
 import os
 import unittest
 import tempfile
+from sys import path
+path.append(src/exam1.py)
 
 from flask import Flask, request, app, json
 
