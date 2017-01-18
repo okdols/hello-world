@@ -2,7 +2,6 @@
 import os
 import unittest
 import tempfile
-from sys import path
 
 from flask import Flask, request, app, json
 
