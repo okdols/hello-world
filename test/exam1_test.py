@@ -3,11 +3,11 @@ import os
 import unittest
 import tempfile
 from sys import path
-path.append('src')
 
 from flask import Flask, request, app, json
 
 import exam1
+path.append('src')
 
 app = Flask(__name__)
 app.config.from_object(__name__)
