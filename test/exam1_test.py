@@ -6,8 +6,8 @@ from sys import path
 
 from flask import Flask, request, app, json
 
-import exam1
 path.append('src')
+import exam1
 
 app = Flask(__name__)
 app.config.from_object(__name__)
