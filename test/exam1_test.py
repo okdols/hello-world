@@ -99,6 +99,6 @@ class TestsCase(unittest.TestCase):
         self.assertEqual(result.status_code, 200)
         self.assertTrue('id', result.data)
 
-    # Runs the unittest in the module.
-    if __name__ == '__main__':
-        unittest.main()
+# Runs the unittest in the module.
+if __name__ == '__main__':
+    unittest.main()
