@@ -6,7 +6,6 @@ from sys import path
 
 from flask import Flask, request, app, json
 
-path.append('src')
 import exam1
 
 app = Flask(__name__)
