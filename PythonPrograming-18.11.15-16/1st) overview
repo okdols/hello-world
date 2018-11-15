@@ -1,0 +1,19 @@
+# 1일차
+
+## DB API
+
+| 구분 | 비고|
+| --- | --- |
+| 모듈 | DB명|
+| 클래스 | 테이블 |
+| 함수 | CRUD |
+| 전역변수(속성) | 컬럼 |
+| 자료구조 | ... |
+
+- Django
+- ORM 사용 (Object Relational mapping)
+
+## 도구
+- Visual Studio code
+- Python plugin 설치: https://github.com/Microsoft/vscode-python
+
